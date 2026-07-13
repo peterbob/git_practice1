@@ -1,0 +1,48 @@
+/* Keep every dashboard column inside the viewport and independently scrollable. */
+.terminal-panel {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.terminal-body {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #3c424d #111419;
+}
+
+.tasks,
+.visual {
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #3c424d #111419;
+}
+
+.terminal-body::-webkit-scrollbar,
+.tasks::-webkit-scrollbar,
+.visual::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track,
+.tasks::-webkit-scrollbar-track,
+.visual::-webkit-scrollbar-track {
+  background: #111419;
+}
+
+.terminal-body::-webkit-scrollbar-thumb,
+.tasks::-webkit-scrollbar-thumb,
+.visual::-webkit-scrollbar-thumb {
+  background: #3c424d;
+  border: 2px solid #111419;
+  border-radius: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover,
+.tasks::-webkit-scrollbar-thumb:hover,
+.visual::-webkit-scrollbar-thumb:hover {
+  background: #555d69;
+}

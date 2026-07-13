@@ -1,0 +1,33 @@
+.verify {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #705bc3;
+  border-radius: 7px;
+  background: #201a35;
+  color: #c8bbf7;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.verify:hover { background: #2a2244; }
+.verify svg { width: 14px; }
+.validation-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 17px;
+  padding: 11px;
+  border: 1px solid #5a3634;
+  border-radius: 8px;
+  background: #211413;
+  color: #e89a93;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.validation-error svg { width: 14px; flex: none; }
+.lesson-list button:disabled { opacity: .38; cursor: not-allowed; }
